@@ -109,5 +109,33 @@ namespace DataStructure
             }
             return null;
         }
+
+        public int findPoistion(int value)
+        {
+            int position = 0;
+            while (this.head != null)
+            {
+                position++;
+                if (this.head.data == value)
+                {
+                    return position;
+                }
+                this.head = this.head.next;
+            }
+            return position;
+        }
+
+        public void AddInBet2(Node exist_node, int new_data)
+        {
+            if (exist_node == null)
+            {
+                Console.WriteLine("This node not exist");
+                return;
+            }
+            Node new_node = new Node(new_data);
+            new_node.next = exist_node.next;
+            exist_node.next = new_node;
+
+        }
     }
 }

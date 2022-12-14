@@ -41,14 +41,25 @@ namespace DataStructure
             rm.Display();
             Console.WriteLine("last element is poped out from linked list = " + rm.removeLastNode().data);
             rm.Display();
-            */
-            Console.WriteLine("UC7");
+            
+            Console.WriteLine("UC7");*/
             LinkedList sn = new LinkedList();
             sn.Add(56);
             sn.Add(30);
             sn.Add(70);
             sn.Display();
             Console.WriteLine("Serach node: " + sn.Search(30).data);
+            
+
+            Console.WriteLine("\n UC8");
+            LinkedList obj = new LinkedList();
+            obj.Add(56);
+            obj.Add(30);
+            obj.Add(70);
+            //linkedList.Display();
+
+            obj.AddInBet2(obj.head.next, 40);
+            obj.Display();
 
         }
 
