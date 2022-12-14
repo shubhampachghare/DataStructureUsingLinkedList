@@ -97,5 +97,17 @@ namespace DataStructure
             newNode.next = null;
             return lastElement;
         }
+        public Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace DataStructure
             remove.Add(70);
             remove.Display();
             Console.WriteLine("First element is poped out from linked list = " + remove.removeFirstNode().data);
-            remove.Display();*/
+            remove.Display();
 
             LinkedList rm = new LinkedList();
             rm.Add(56);
@@ -41,6 +41,14 @@ namespace DataStructure
             rm.Display();
             Console.WriteLine("last element is poped out from linked list = " + rm.removeLastNode().data);
             rm.Display();
+            */
+            Console.WriteLine("UC7");
+            LinkedList sn = new LinkedList();
+            sn.Add(56);
+            sn.Add(30);
+            sn.Add(70);
+            sn.Display();
+            Console.WriteLine("Serach node: " + sn.Search(30).data);
 
         }
 
