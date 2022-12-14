@@ -22,7 +22,7 @@ namespace DataStructure
             //linkedList.Display();
 
             linkedList3.InsertAtParticularPoistion(2, 30);
-            linkedList3.Display();*/
+            linkedList3.Display();
 
 
 
@@ -32,7 +32,16 @@ namespace DataStructure
             remove.Add(70);
             remove.Display();
             Console.WriteLine("First element is poped out from linked list = " + remove.removeFirstNode().data);
-            remove.Display();
+            remove.Display();*/
+
+            LinkedList rm = new LinkedList();
+            rm.Add(56);
+            rm.Add(30);
+            rm.Add(70);
+            rm.Display();
+            Console.WriteLine("last element is poped out from linked list = " + rm.removeLastNode().data);
+            rm.Display();
+
         }
 
     }
