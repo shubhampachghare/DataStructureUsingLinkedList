@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    internal class node
+    public class Node
     {
-        public int id;
-        public node next;
-        public node(int id) 
-        { 
-            this.id = id;
+        public int data;
+        public Node next;
+
+        public Node(int data)
+        {
+            this.data = data;
         }
     }
+    
 }
-
-
-
