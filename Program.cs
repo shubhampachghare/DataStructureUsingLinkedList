@@ -61,7 +61,7 @@ namespace DataStructure
 
             obj.AddInBet2(obj.head.next, 40);
             obj.Display();
-            */
+            
 
             Console.WriteLine("\n UC9");
             LinkedList obj1 = new LinkedList();
@@ -72,7 +72,17 @@ namespace DataStructure
             obj1.Display();
             obj1.deleteNode(40);
             obj1.Display();
-            Console.WriteLine("size is: " + obj1.size());
+            Console.WriteLine("size is: " + obj1.size());*/
+
+
+
+            Console.WriteLine("\n UC10");
+            SortedLinkedList sort = new SortedLinkedList();
+            sort.Add(56);
+            sort.Add(30);
+            sort.Add(40);
+            sort.Add(70);
+            sort.Display();
         }
 
     }
