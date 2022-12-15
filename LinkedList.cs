@@ -25,7 +25,7 @@ namespace DataStructure
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} inserted into the linked list", node.data);
+            Console.WriteLine("inserted into the linked list", node.data);
         }
 
 
@@ -136,6 +136,40 @@ namespace DataStructure
             new_node.next = exist_node.next;
             exist_node.next = new_node;
 
+        }
+        public void deleteNode(int deletData)
+        {
+            if (this.head == null)
+                return;
+            else if (this.head.data == deletData && this.head.next == null)
+                this.head = null;
+            else if (this.head.data == deletData)
+                this.head = this.head.next;
+            else
+            {
+                Node temp = this.head;
+                while (temp.next != null)
+                {
+                    if (temp.next.data == deletData)
+                    {
+                        temp.next = temp.next.next;
+                        break;
+                    }
+                    temp = temp.next;
+                }
+            }
+        }
+
+        public int size()
+        {
+            int size = 0;
+            Node temp = this.head;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+            return size;
         }
     }
 }

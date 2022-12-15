@@ -42,7 +42,8 @@ namespace DataStructure
             Console.WriteLine("last element is poped out from linked list = " + rm.removeLastNode().data);
             rm.Display();
             
-            Console.WriteLine("UC7");*/
+            Console.WriteLine("UC7");
+
             LinkedList sn = new LinkedList();
             sn.Add(56);
             sn.Add(30);
@@ -60,7 +61,18 @@ namespace DataStructure
 
             obj.AddInBet2(obj.head.next, 40);
             obj.Display();
+            */
 
+            Console.WriteLine("\n UC9");
+            LinkedList obj1 = new LinkedList();
+            obj1.Add(56);
+            obj1.Add(30);
+            obj1.Add(40);
+            obj1.Add(70);
+            obj1.Display();
+            obj1.deleteNode(40);
+            obj1.Display();
+            Console.WriteLine("size is: " + obj1.size());
         }
 
     }
